@@ -10,8 +10,8 @@ import java.util.Collections;
 import java.util.List;
 
 @Repository
-public class MockUserRepositoryImpl implements UserRepository {
-    private static final Logger log = LoggerFactory.getLogger(MockUserRepositoryImpl.class);
+public class InMemoryUserRepositoryImpl implements UserRepository {
+    private static final Logger log = LoggerFactory.getLogger(InMemoryUserRepositoryImpl.class);
 
     @Override
     public boolean delete(int id) {

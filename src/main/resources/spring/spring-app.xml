@@ -7,14 +7,14 @@
 
     <bean class="ru.javawebinar.topjava.repository.mock.MockUserRepositoryImpl" id="mockUserRepository"/>
     <!--
-        <bean class="ru.javawebinar.topjava.repository.mock.MockUserRepositoryImpl" id="mockUserRepository"/>
+            <bean class="ru.javawebinar.topjava.repository.mock.MockUserRepositoryImpl" id="mockUserRepository"/>
 
     <bean class="ru.javawebinar.topjava.service.UserServiceImpl">
         <property name="repository" ref="mockUserRepository"/>
     </bean>
-        <bean class="ru.javawebinar.topjava.service.UserServiceImpl">
-            <property name="repository" ref="mockUserRepository"/>
-        </bean>
+            <bean class="ru.javawebinar.topjava.service.UserServiceImpl">
+                <constructor-arg name="repository" ref="mockUserRepository"/>
+            </bean>
     -->
 
     <context:annotation-config/>

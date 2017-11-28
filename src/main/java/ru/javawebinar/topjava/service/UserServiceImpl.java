@@ -49,6 +49,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void update(User user) {
-        repository.save(user);
+        checkNotFoundWithId(repository.save(user), user.getId());
     }
 }

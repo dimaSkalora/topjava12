@@ -13,7 +13,7 @@ import java.util.List;
 
 @Repository
 @Transactional(readOnly = true)
-//HW04
+// HW04
 public class JpaMealRepositoryImpl implements MealRepository {
 
     @PersistenceContext

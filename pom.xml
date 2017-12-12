@@ -129,6 +129,11 @@
             <artifactId>spring-data-jpa</artifactId>
             <version>${spring-data-jpa.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-jcache</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-dao -->
         <dependency>
